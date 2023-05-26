@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 200vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.news {
+    background-color: black;
+    color: gold;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    font-size: 0.9em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    margin-right: auto;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+    position: sticky;
+    top: 0;
+}
+
+.navbar li, .navbar a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.navbar li:hover {
+    background-color: rgba(2, 0, 36, 1);
+    color: #fff;
+}
+
+.search-box {
+    margin-left: auto;
+}
+
+.search-box form {
+    display: flex;
+}
+
+.search-box input {
+    border: none;
+    border-radius: 10px;
+    padding: 8px 8px 8px 35px;
+    font-size: 1em;
+}
+
+.search-box i {
+    color: black;
+    position: absolute;
+    padding: 10px;
+}

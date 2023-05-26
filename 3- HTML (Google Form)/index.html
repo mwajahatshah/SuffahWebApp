@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    #tbl1 {
+        text-align: center;
+    }
+
+    #tbl2 td {
+        padding: 5px;
+        text-align: center;
+    }
+
+    #tbl2 td:first-child {
+        text-align: left;
+    }
+
+    #button {
+        padding: 0.5% 1%;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <hr>
+
+    <h1>Google Form Sample</h1>
+    <h4>Here are all of the question types</h4>
+    
+    <hr>
+
+    <h5><a href="#">Sign in to Google</a> to save your progress. <a href="#">Learn more</a></h5>
+
+    <hr><br>
+
+    <form>
+        
+        <div>
+
+            <h4>This is a text question</h4>
+
+            <p>Limited space for typed response. Great space for name of respondee or short answer</p>
+
+            <input type="text" placeholder="Your Answer">
+
+        </div>
+        
+        <br><br><hr><br>
+
+        <div>
+
+            <h4>This is a paragraph question</h4>
+
+            <p>Extended space for longer answer</p>
+
+            <textarea placeholder="Your Answer" cols="50" rows="2"></textarea>
+
+        </div>
+        
+        <br><br><hr><br>
+
+        <div>
+
+            <h4>This is a multiple choice question</h4>
+
+            <p>May click one of the choices or respond to "other"</p>
+
+            <input type="radio" name="radio_choice" id="radio_choice1">
+            <label for="radio_choice1">Choice 1</label>
+            <br>
+
+            <input type="radio" name="radio_choice" id="radio_choice2">
+            <label for="radio_choice2">Choice 2</label>
+            <br>
+
+            <input type="radio" name="radio_choice" id="radio_choice3">
+            <label for="radio_choice3">Other:</label>
+            <input type="text">
+
+        </div>
+
+        <br><br><hr><br>
+
+        <div>
+
+            <h4>This is a checkbox question</h4>
+
+            <p>Similar to multiple choice; multiple responses available</p>
+
+            <input type="checkbox" name="chk_choice" id="chk_choice1">
+            <label for="chk_choice1">Choice 1</label>
+            <br>
+
+            <input type="checkbox" name="chk_choice" id="chk_choice2">
+            <label for="chk_choice2">Choice 2</label>
+            <br>
+
+            <input type="checkbox" name="chk_choice" id="chk_choice3">
+            <label for="chk_choice3">Other:</label>
+            <input type="text">
+
+        </div>
+
+        <br><br><hr><br>
+
+        <div>
+
+            <h4>This is a choose from a list question</h4>
+
+            <p>Drop down menu format</p>
+
+            <select name="select_choice">
+
+                <option value="choose">Choose</option>
+                <option value="choice1">Choice 1</option>
+                <option value="choice2">Choice 2</option>
+                <option value="choice3">Choice 3</option>
+
+            </select>
+
+        </div>
+
+        <br><br><hr><br>
+
+        <div>
+
+            <h4>This is a scale question</h4>
+
+            <p>You may change the scale up to 10; Similar to Likert Scale</p>
+            <br>
+
+            <table id="tbl1">
+
+                <tr>
+                    <td></td>
+                    <td><label for="scale1">1</label></td>
+                    <td><label for="scale2">2</label></td>
+                    <td><label for="scale3">3</label></td>
+                    <td><label for="scale4">4</label></td>
+                    <td><label for="scale5">5</label></td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="scale1">Strongly Disagree</label> &nbsp; &nbsp; &nbsp; </td>
+                    <td><input type="radio" name="scale" value="1" id="scale1"></td>
+                    <td><input type="radio" name="scale" value="2" id="scale2"></td>
+                    <td><input type="radio" name="scale" value="3" id="scale3"></td>
+                    <td><input type="radio" name="scale" value="4" id="scale4"></td>
+                    <td><input type="radio" name="scale" value="5" id="scale5"></td>
+                    <td> &nbsp; &nbsp; &nbsp; <label for="scale5">Strongly Agree</label></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <br><br><hr><br>
+
+        <div>
+
+            <h4>This is a grid question</h4>
+
+            <p>Rate Your Google Form Knowledge - Multiple Responses Available</p>
+            <br>
+
+            <table id="tbl2">
+
+                <tr>
+                    <td></td>
+                    <td>I get it</td>
+                    <td>I have a <br> pretty good <br> grasp</td>
+                    <td> Neutral </td>
+                    <td>I am <br> Struggling</td>
+                    <td>I don't <br> get it</td>
+                </tr>
+                
+                <tr>
+                    <td>Uses for <br> Google Forms</td>
+                    <td><input type="radio" name="uses" value="1"></td>
+                    <td><input type="radio" name="uses" value="2"></td>
+                    <td><input type="radio" name="uses" value="3"></td>
+                    <td><input type="radio" name="uses" value="4"></td>
+                    <td><input type="radio" name="uses" value="5"></td>
+                </tr>
+
+                <tr>
+                    <td>Creating <br> Google Forms</td>
+                    <td><input type="radio" name="create" value="1"></td>
+                    <td><input type="radio" name="create" value="2"></td>
+                    <td><input type="radio" name="create" value="3"></td>
+                    <td><input type="radio" name="create" value="4"></td>
+                    <td><input type="radio" name="create" value="5"></td>
+                </tr>
+
+                <tr>
+                    <td>Sending Completed <br> Google Forms</td>
+                    <td><input type="radio" name="send" value="1"></td>
+                    <td><input type="radio" name="send" value="2"></td>
+                    <td><input type="radio" name="send" value="3"></td>
+                    <td><input type="radio" name="send" value="4"></td>
+                    <td><input type="radio" name="send" value="5"></td>
+                </tr>
+
+                <tr>
+                    <td>Using Results <br> From Google Forms</td>
+                    <td><input type="radio" name="result" value="1"></td>
+                    <td><input type="radio" name="result" value="2"></td>
+                    <td><input type="radio" name="result" value="3"></td>
+                    <td><input type="radio" name="result" value="4"></td>
+                    <td><input type="radio" name="result" value="5"></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <br><hr><br>
+        
+        <div>
+
+            <input type="submit" value="Submit" id="button">
+
+        </div>
+
+    </form>
+
+    <h6>Never submit passwords through Google Forms</h6>
+    <h6>This content is neither created nor endorsed by Google. <a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeI8_vYyaJgM7SJM4Y9AWfLq-tglWZh6yt7bEXEOJr_L-hV1A/reportabuse?source=https://docs.google.com/forms/d/e/1FAIpQLSeI8_vYyaJgM7SJM4Y9AWfLq-tglWZh6yt7bEXEOJr_L-hV1A/viewform?formkey%3DdGx0b1ZrTnoyZDgtYXItMWVBdVlQQWc6MQ" target="_blank">Report Abuse</a> - <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> - <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></h6>
+
+</body>
+</html>

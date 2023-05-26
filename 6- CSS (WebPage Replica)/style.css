@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.header {
+    padding-bottom: 2%;
+    background-color: #008060;    
+    padding-top: 3%;
+}
+
+.logo img {
+    display: block;
+    height: 8%;
+    width: 8%;
+    margin: 0 auto;
+}
+
+.main {
+    background: url("./Images/background.svg") no-repeat;
+    background-size: 110%;
+}
+
+.text {
+    color: white;
+    text-align: center;
+    line-height: 4em;
+}
+
+
+.text h1 {
+    font-size: 3em;
+}
+
+.text p {
+    font-size: 1.8em;
+}
+
+.input {
+    padding: 3% 0;
+    text-align: center;
+    line-height: 3em;
+}
+
+
+.input input, .input button {
+    padding: 1%;
+    border: none;
+    border-radius: 3px;
+}
+
+.input button {
+    padding: 1% 2%;
+    background-color: #131416;
+    color: white;
+    font-weight: bolder;
+}
+
+.input h6 {
+    font-weight: normal;
+    color: white;
+}
+
+.input button:hover {
+    background-color: black;
+    box-shadow: 0 0 5px black;
+    transition: 0.5s;
+    
+}
+
+.input input:focus {
+    box-shadow: 0 0 10px black;
+    transition: 0.5s;
+}
+
+.pic img {
+    display: block;
+    height: 55%;
+    width: 55%;
+    margin: 0 auto;
+}
+
+.below {
+    height: 150vh;
+}
+
+.options, .brands {
+    padding: 10% 18% 5% 18%;
+}
+
+.col {
+    width: 33%;
+    float: left;
+}
+
+.col ol {
+    color: black;
+    list-style-position: inside;
+    font-weight: bolder;
+}
+
+.col div {
+    color: #6b7177;
+}
+
+.brands img {
+    display: block;
+    height: 80%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.button button {
+    border-radius: 3px;
+    border: none;
+    padding: 1.25% 2.5%;
+    background-color: #008060;
+    color: white;
+    font-weight: bolder;
+}
+
+.text2, .button {
+    text-align: center;
+    padding: 5%;
+
+}
+
+.p1 {
+    font-size: 1.8em;
+    line-height: 1.5em;
+}
+
+.p2 {
+    font-size: 1.2em;
+    color: #6b7177;
+}

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+    background-color: honeydew;
+    color: rgba(41, 41, 41, 1);
+    font-family: 'Ubuntu', sans-serif;
+    width: 90%;
+    margin: auto;
+    letter-spacing: 0.1em;
+    word-spacing: 0.5em;
+    line-height: 1.5em;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+.subhead {
+    color: rgba(117, 117, 117, 1);
+}
+
+.quote {
+    color: rgba(117, 117, 117, 1);
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.pic {
+    background-color: white;
+    display: block;
+    margin: 2% auto;
+    padding: 2%;
+    border: 1px solid rgba(117, 117, 117, 1);
+}
+
+.caption {
+    text-align: center;
+    color: rgba(117, 117, 117, 1);
+    word-spacing: 0;
+    letter-spacing: 0;
+    font-size: 0.8em;
+}
+
+#letter {
+    font-size: 1.5em;
+      
+}
+
+#indent {
+    text-indent: 5%;  
+}

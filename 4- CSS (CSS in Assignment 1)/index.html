@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>A Simple Guide to Understanding Blockchain</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <h1>A Simple Guide to Understanding Blockchain</h1>
+    <br>
+
+    <h2 class="subhead">A simplistic explanation of what is Blockchain and how it works</h2>
+
+    <p id="indent"><strong><em><span id="letter">Y</span>ou are in a grocery store and scan the QR code on your favorite coffee. You can view the details of where the coffee beans grew, cleaned, triaged, processed, and then roasted. what-if you can trace the supply and distribution to know the means of transport and how long it took to arrive at the store and so forth.</em></strong></p>
+
+    <p><strong><em>Is there a technology that can help record information at each step and make that information available to everyone transparently?</em></strong></p>
+    <br>
+
+    <h2 class="subhead">Welcome to the world of Blockchain</h2>
+
+    <img src="./img1.png" class="pic">
+    <p class="caption">image by author</p>
+    <br>
+
+    <p><strong>Blockchain is an immutable, distributed, decentralized; peer-to-peer ledger replicated across multiple nodes connected in a network, making it possible to record data about any event or transaction as it happens. It consists of blocks in a chain used to record as digital assets using a secure algorithm.</strong></p>
+    <br>
+
+    <blockquote><strong><em><a href="https://bitcoin.org/bitcoin.pdf" target="_blank">Bitcoin as a concept was first proposed by Satoshi Nakamoto through a white paper in 2008</a></em></strong></blockquote>
+    <br>
+
+    <img src="./img2.png" class="pic">
+    <p class="caption">image by author</p>
+    <br>
+
+    <h3>Where can we apply Blockchain technology?</h3>
+
+    <ul>
+
+        <li><strong>Food Safety:</strong> <a href="https://techcrunch.com/2018/09/24/walmart-is-betting-on-the-blockchain-to-improve-food-safety/" target="_blank">Walmart</a> is working with IBM for enhanced tracking and traceability of food products, resulting in better food safety.</li>
+        <br>
+
+        <li><strong>Real Estate Title Issuance:</strong> title registry system uses blockchain to make title issuance instantaneous.</li>
+        <br>
+
+        <li><strong>Money Transfer from anywhere to anywhere on the globe:</strong> The global money transfer is time-consuming, error-prone, costly, and subjected to money laundering. The secure, immutable, decentralized, and transparency feature of Blockchain helps solve money transfer issues without any intermediary.</li>
+        <br>
+
+        <li><strong>Regulatory Compliance and Audit:</strong> Blockchain is very secure, immutable making any alteration to transactions very difficult.</li>
+        <br>
+
+        <li><strong>Supply chain:</strong> Singapore-based VeChain created a permissioned blockchain-based supply chain to monitor products as they move along from manufacturer to store shelf.</li>
+
+    </ul>
+    <br>
+
+    <p>Blockchain can be applied to many other applications wherever we want to record transactions securely between two parties without an intermediary.</p>
+    <br>
+
+    <p><strong><em>How is a Blockchain ledger different from a database? Are the two not the same used for recording, organizing, monitoring, and controlling information?</em></strong></p>
+
+    <p>Database and Blockchain both record transactions, but <strong>the database is centralized and has a single point of failure. In contrast, the Blockchain is decentralized and distributed on multiple nodes across the network.</strong></p>
+    <br>
+
+    <strong>Every node in the blockchain network collectively takes part in the consensus algorithm using Proof-of-Work.</strong>
+
+    <p><strong>Databases are owned by a central authority,</strong> a company, or a government institution, which controls access by granting different roles to different users. Whereas <strong>Blockchain is a peer-to-peer network where each node can connect with every other node, and blocks in a chain are connected using a secure cryptographic protocol like SHA-256.</strong></p>
+    <br>
+
+    <p><strong><em>Before diving deep into the blockchain, let us familiarize ourselves with key terminologies.</em></strong></p>
+    <br>
+
+    <h3>Ledger</h3>
+
+    <p><strong>A ledger records transactions such as recording payments, supply chain details, medical records, real-estate contracts, etc.</strong></p>
+    <br>
+
+    <h3>SHA-256</h3>
+    
+    <p><strong>SHA-256 is a cryptographic algorithm that accepts input of any length, scrambles the data deterministically, and returns a hash that is 256 bits or 64 characters long.</strong> SHA-256 hashing algorithm ensures the input can never be derived from the output, making it very secure.</p>
+    <br>
+
+    <h3>Mining</h3>
+
+    <p><strong>It is the process of validating and recording new transactions on a blockchain performed by Miners for which they have a special mining software.</strong></p>
+    <br>
+
+    <h3>Node</h3>
+
+    <p><strong>A Node in a blockchain can be any electronic device that is part of a peer-to-peer network and maintain its own copy of the blockchain.</strong></p>
+    <br>
+
+    <h3>Merkle Tree</h3>
+
+    <p><strong>Merkle tree is also referred to as “hash binary tree,” a data structure for efficient and secure storage of transactions in a blockchain.</strong></p>
+
+    <p><strong>Merkle tree summarizes all the transactions in a block by producing a digital fingerprint of the entire set of transactions.</strong>Merkle tree is <strong>created by repeatedly hashing a pair of transactions from the bottom</strong> until we have only one hash, referred to as <strong>Root Hash or Merkle Root.</strong></p>
+    <br>
+
+    <img src="./img3.png" class="pic">
+    <p class="caption">image by author</p>
+    <br><br>
+
+    <p>Merkle trees are used in blockchain to store transaction as it enables users to use the root hash to verify if a transaction was part of the block.</p>
+
+    <p><strong>Merkle tree requires little memory, computationally fast, and only a small amount of information needs to be transmitted over the blockchain network.</strong></p>
+    <br>
+
+    <p><strong><em>How is Blockchain made secure?</em></strong></p>
+
+    <ul>
+
+        <li><strong>Immutability:</strong> Blocks in blockchain are write-once append-only. Data in every block is encrypted using the SHA-256 algorithm that makes modification to data very difficult. Any change in the data renders the newly modified block invalid. This ability of blockchains prevents alteration of transactions.</li>
+
+        <li><strong>Consensus:</strong> Nodes within a distributed blockchain network have to agree on the network's true state to ensure the validity of transactions using Proof of Work or Proof of Stake.</li>
+
+        <li><strong>Transparency:</strong> Blockchain is decentralized and is distributed across multiple nodes across the entire network of computers. If one user tries to forge a transaction in the blockchain, all other nodes in the blockchain network will cross-reference each other and easily pinpoint the node with the incorrect information.</li>
+
+    </ul>
+    <br>
+
+    <p><strong><em>What is a Block?</em></strong></p>
+
+    <p>Blockchain is a shared digital ledger. <strong>A Block in a Blockchain record transaction or transactions to organize, monitor, and control information for informed decision making.</strong></p>
+
+    <p><strong>Every time a new transaction occurs on the blockchain, a record of that transaction is added as a new block to the chain. The new block is added to every participant's nodes ledger only after applying a consensus algorithm like proof of work to validate the transaction. A block in the chain is immutable. It can never be updated and only be appended to the chain.</strong></p>
+    <br>
+
+    <blockquote class="quote"><strong><em>The Genesis block is the very first block added to the blockchain</em></strong></blockquote>
+    <br>
+
+    <p><strong><em>What information is stored in Block?</em></strong></p>
+
+    <p><strong>The Block consists of a</strong></p>
+
+    <ul>
+
+        <li><strong>Block header containing metadata and</strong></li>
+        <br>
+
+        <li><strong>Transaction stored in the block using Merkle Tree.</strong></li>
+
+    </ul>
+    <br>
+
+    <img src="./img4.png" class="pic">
+    <p class="caption">image by author</p>
+    <br><br>
+
+    <p><strong>A Block header in a Blockchain contains the following attributes.</strong></p>
+
+    <ol>
+
+        <li><strong>Version number</strong> to track the software or protocol that will allow other computers to read the block correctly.</li>
+        <br>
+
+        <li><strong>Timestamp:</strong> when the transaction was recorded, or the block was created and is expressed as seconds since 1970-01-01T00:00 UTC.</li>
+        <br>
+
+        <li><strong>256 bit Cryptographic hash of the previous block</strong> header that links one block with another block in a Blockchain. This ensures the integrity of the previous block all the way back to the first block referred to as a Genesis block.</li>
+        <br>
+
+        <li><strong>Nonce</strong> stands for <strong>number only used once. The nonce is a randomly generated number that miners generate to solve a complex mathematical problem to create a block.</strong></li>
+        <br>
+
+        <li><strong>The target represents the difficulty of generating the nonce, which validates a transaction before it is added to a blockchain.</strong> It regulates the speed at which new blocks are added to the blockchain and are adjusted roughly every 2016 block. Higher difficulty in generating the nonce represents a lower target value.</li>
+        <br>
+
+        <li><strong>Merkle root hash</strong> for all the transactions in a block.</li>
+
+    </ol>
+    <br>
+
+    <p><strong>Transaction or Transactions</strong> are stored in the Block using the Merkle tree hash.</p>
+    <br>
+
+    <blockquote class="quote"><strong><em>The block hash is a separate hash derived from data in the block header using SHA-256.</em></strong></blockquote>
+    <br>
+
+    <p><strong>Block hash uses nonce,</strong> and hence hash is tied to the nonce forever. <strong>The nonce is used to come up with a secure hash that meets the criteria as per the target.</strong> Hash must start with a huge number of zeroes based on the target.</p>
+    <br>
+
+    <img src="./img5.png" class="pic">
+    <p class="caption">image by author</p>
+    <br><br>
+
+    <p><strong><em>How is a transaction recorded in a Blockchain?</em></strong></p>
+
+    <p>Blockchain miners install and run a special Blockchain mining software that enables their computers to communicate securely with one another. Once a computer installs the software, joins the network, and begins mining, it becomes what is called a 'node.'</p>
+
+    <p>Blockchain can be used to record any transaction like real estate contracts when person A sells a property to Person B at x amount or when food is produced at the farm, travel through the entire supply chain, and finally consumed by the consumer.</p>
+    <br>
+
+    <p><strong>Step 1: Sender or Originator of Transaction digitally signs the transaction</strong></p>
+
+    <p>Digital signatures are a fundamental building block in blockchains; they are primarily used to verify the authenticity of transactions. The sender of the transaction uses the data and the private key to encrypt the message.</p>
+
+    <p>If Peter wants to transact with Patty, he must digitally sign the transaction using his private key and the transaction data and send it to nodes on the network.</p>
+    <br>
+
+    <p><strong>Step 2: Transaction is broadcasted to the network</strong></p>
+
+    <p>After a transaction is transmitted to the network, it gets verified by all of the available Blockchain nodes.</p>
+    <br>
+
+    <p><strong>Step 3: Nodes authenticates the transaction</strong></p>
+
+    <p>Knowledge of Peter's public key will enable confirm the authenticity of the transaction. Peter's public key, transaction, and Peter's digitally signed transaction will authenticate the transaction.</p>
+    <br>
+
+    <img src="./img6.png" class="pic">
+    <p class="caption">image by author</p>
+    <br><br>
+
+    <p><strong>Step 4: valid transactions are stored in mempool</strong></p>
+
+    <p>The mempool stores all valid transactions waiting to be confirmed by the network. Miners pull transactions from the mempool for them to be bundled together into a block.</p>
+    <br>
+
+    <p><strong>Step 5: Miners validate using consensus to add the block</strong></p>
+
+    <p>To add a new block to the blockchain, a computational puzzle must be solved to encrypt the block's data.</p>
+
+    <p>Miners pull authenticated transactions from the mempool and try to solve the complex mathematical problem. <strong>Miners find the nonce such that the hash of the block is less than or equal to the current target of the Blockchain network, also called POW(Proof of Work)</strong></p>
+    <br>
+
+    <blockquote class="quote"><strong>Proof of Work requires miners to solve complex mathematical problem to validate and confirm transactions over the network using consensus mechanisms to produce a new block to the chain.</strong></blockquote>
+    <br>
+
+    <p>Proof of work makes blockchain secure as any alteration on the blocks requires remaining all subsequent blocks to be altered, and this is extremely difficult.</p>
+
+    <p>The first Miner that has solves the cryptographic challenge then broadcasts the newly generated block using the Gossip protocol. Once a block of transactions has been verified, then it is added to the blockchain network.</p>
+
+    <p>A reward is given to the first miner who solves each cryptographic problem.</p>
+    <br>
+
+    <h3>POS(Proof of Stake)</h3>
+
+    <p>In a distributed consensus-based on the <strong>Proof of Work(POW), miners need a lot of energy to come up with the hash for the block that is less than or equal to the target for the blockchain network. In contrast, the Proof of Stake creator of the next block is chosen deterministically based on the stake in the blockchain.</strong></p>
+    <br>
+
+    <blockquote class="quote"><strong>POS is a low-energy consuming alternative to POW algorithm. POS has validators who own the stakes and the responsibility of maintaining the public ledger instead of Miners in POW.</strong></blockquote>
+    <br>
+
+    <h3>Weakness of Blockchain</h3>
+
+    <ul>
+
+        <li>High Energy consumption to solve the cryptographic challenge in order to add a block to the blockchain</li>
+        <br>
+
+        <li>Susceptible to 51%attack</li>
+
+    </ul>
+    <br>
+
+    <blockquote class="quote"><strong>51% attack is an attack on the blockchain orchestrated when a group of miners on the blockchain network control more than 50% of the network's hash rate or computing power to prevent new transactions from gaining confirmations, or ability to invalidate transactions that introduce double spend.</strong></blockquote>
+    <br>
+
+    <h3>Types of Blockchain</h3>
+
+    <p><strong>Public blockchain:</strong></p>
+
+    <ul>
+
+        <li>Public blockchains are <strong>non-restrictive, transparent, permissionless, fully distributed ledgers.</strong></li>
+        <br>
+
+        <li><strong>No one individual or entity controls the blockchain</strong> and the transactions that are recorded in the blockchain.</li>
+        <br>
+
+        <li><strong>Anyone can view the transactions on the public blockchain.</strong></li>
+        <br>
+
+        <li><strong>Transactions are added to the blockchain using a consensus algorithm.</strong></li>
+
+    </ul>
+    <br>
+
+    <p>Examples of a public blockchain: Bitcoin, Ethereum, or Litecoin.</p>
+    <br>
+
+    <p><strong>Private blockchain</strong></p>
+
+    <ul>
+
+        <li>A private blockchain is <strong>centralized, restrictive, and users require permission to join.</strong></li>
+        <br>
+
+        <li><strong>Operate in a closed network.</strong></li>
+        <br>
+
+        <li>Controlled by Enterprises for <strong>recording their sensitive business data not to be visible outside the organization.</strong></li>
+        <br>
+
+        <li>Transactions are private and are <strong>only available to authorized users in the closed network.</strong></li>
+
+    </ul>
+    <br>
+
+    <p>Examples of a private blockchain: hyper ledger</p>
+    <br>
+
+    <p><strong>Hybrid blockchain</strong></p>
+
+    <ul>
+
+        <li>Hybrid blockchain is a <strong>combination of the private and public blockchain.</strong></li>
+        <br>
+
+        <li><strong>Combines the permissioned feature of the private blockchain with the security and transparency feature of a public blockchain.</strong></li>
+        <br>
+
+        <li><strong>Access-driven control</strong> decides which users can view the data on the blockchain or add data to the blockchain.</li>
+        <br>
+
+        <li><strong>Suited for businesses providing them with the required flexibility to operate securely and transparently</strong></li>
+
+    </ul>
+    <br>
+
+    <h3>Conclusion:</h3>
+
+    <p>Blockchain is a secure, immutable, peer-to-peer distributed ledger that is decentralized. It contains a secure block that is linked in a chain and replicated across multiple nodes connected in a blockchain network. The public, private and hybrid blockchain can be used based on features of blockchain helpful.</p>
+    <br>
+
+    <h3>References:</h3>
+
+    <a href="https://www.investopedia.com/terms/b/blockchain.asp" target="_blank">https://www.investopedia.com/terms/b/blockchain.asp</a>
+
+
+</body>
+</html>

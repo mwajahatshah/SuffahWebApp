@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ADA996;
+    background: -webkit-linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    background: linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    height: 100vh;
+    background: url("./pics/advertising-photoshoot-of-torgoen-business-wrist-watch.jpg");
+    padding: 2em;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    height: 40vh;
+    width: 15vw;
+    padding: 1em;
+    background-color: rgb(246, 245, 245);
+    box-shadow: 0 0 10px rgb(225, 225, 225);
+    margin: 1em;
+}
+
+.card:hover img,
+.card:hover {
+    box-shadow: 0 0 10px rgb(180, 180, 180);
+    transition: 0.2s ease-in-out;
+    -webkit-filter: none;
+}
+
+.pic>img {
+    width: 100%;
+    -webkit-filter: grayscale();
+}
+
+.text {
+    padding: 0.5em 0;
+}
+
+.button>button {
+    border: 1px solid green;
+    color: green;
+    background-color: transparent;
+    padding: 0.5em;
+    border-radius: 2px;
+    font-size: 70%;
+    margin-bottom: 0.5em;
+}
+
+.button>button:first-child {
+    background-color: green;
+    color: rgb(246, 245, 245);
+    padding: 0.5em;
+    border-radius: 2px;
+    font-size: 70%;
+}
+
+.button>button:hover {
+    background-color: green;
+    color: rgb(246, 245, 245);
+}
+
+@media (max-width: 550px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .card {
+        height: 40vh;
+        width: 50vw;
+    }
+}
