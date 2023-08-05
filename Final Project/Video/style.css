@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    height: auto;
+    width: auto;
+    padding: 1em;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px #e1e1e1;
+    margin: 1em;
+    color: #000;
+}
+
+.card:hover img,
+.card:hover {
+    box-shadow: 0 0 10px #b4b4b4;
+    transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 550px) {
+    .row {
+        flex-direction: column;
+    }
+}

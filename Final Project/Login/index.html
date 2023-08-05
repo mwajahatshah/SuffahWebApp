@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup and Login Page</title>
+    <style>
+        body {
+            background-image: url('./pics/LogInBackground.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: #fff;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+            width: 320px;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            color: #E50914;
+            /* Netflix red */
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #000;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color: #000;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #E50914;
+            /* Netflix red */
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #b2070d;
+            /* Darker shade of Netflix red */
+        }
+
+        .toggle-btn {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #E50914;
+            /* Netflix red */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .toggle-btn:hover {
+            background-color: #b2070d;
+            /* Darker shade of Netflix red */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2 id="formTitle">Signup</h2>
+        <form id="signupForm" class="form-signup">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Signup">
+            </div>
+            <button class="toggle-btn" onclick="toggleForms()">Already signed up? Login</button>
+        </form>
+
+        <form id="loginForm" class="form-login" style="display: none;">
+            <div class="form-group">
+                <label for="loginUsername">Username</label>
+                <input type="text" id="loginUsername" name="loginUsername" required>
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Login">
+            </div>
+            <button class="toggle-btn" onclick="toggleForms()">Sign Up</button>
+        </form>
+
+
+    </div>
+
+    <script>
+        function toggleForms() {
+            const signupForm = document.getElementById("signupForm");
+            const loginForm = document.getElementById("loginForm");
+            const formTitle = document.getElementById("formTitle");
+
+            if (signupForm.style.display === "none") {
+                signupForm.style.display = "block";
+                loginForm.style.display = "none";
+                formTitle.innerText = "Signup";
+            } else {
+                signupForm.style.display = "none";
+                loginForm.style.display = "block";
+                formTitle.innerText = "Login";
+            }
+        }
+
+        var signusername;
+        var signpassword;
+
+        document.getElementById("signupForm").addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            signusername = document.getElementById("username").value;
+            signpassword = document.getElementById("password").value;
+
+            alert("Signup successful!");
+
+            toggleForms();
+        });
+
+        function test() {
+            console.log(signusername)
+            console.log(signpassword)
+        }
+
+
+        document.getElementById("loginForm").addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const loginUsername = document.getElementById("loginUsername").value;
+            const loginPassword = document.getElementById("loginPassword").value;
+
+            if (loginUsername === signusername && loginPassword === signpassword) {
+                window.location.href = "./Product.html";
+            } else {
+                alert("Login failed. Invalid credentials.");
+            }
+
+            document.getElementById("loginForm").reset();
+        });
+
+
+    </script>
+</body>
+
+</html>
